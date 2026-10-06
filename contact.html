@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact | Mr.Reality</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><div class="logo">MR<span>.</span>REALITY</div><nav><a href="index.html">Home</a><a href="news.html">News</a><a href="transfers.html">Transfers</a><a class="active" href="contact.html">Contact</a></nav></header>
+<main class="page contact">
+  <p class="eyebrow">GET IN TOUCH</p><h1>Contact <span>Mr.Reality</span></h1>
+  <p>Have a football story, tip or collaboration idea? Send a message.</p>
+  <form onsubmit="sendMessage(event)">
+    <input id="name" placeholder="Your name" required>
+    <input id="email" type="email" placeholder="Your email" required>
+    <textarea id="message" rows="6" placeholder="Your message" required></textarea>
+    <button class="btn primary" type="submit">Send Message</button>
+  </form>
+  <p id="form-status"></p>
+</main>
+<footer><strong>MR.REALITY</strong><p>Football news. No noise.</p><p>© 2026 Mr.Reality</p></footer>
+<script>
+function sendMessage(e){
+  e.preventDefault();
+  document.getElementById('form-status').textContent =
+    'Thanks! Your message form is ready. Connect it to an email service when you publish the site.';
+}
+</script>
+</body></html>
